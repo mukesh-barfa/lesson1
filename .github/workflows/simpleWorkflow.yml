@@ -1,0 +1,13 @@
+name: WorkFlow overView
+
+on:
+ workflow_dispatch
+
+jobs:
+  a_simple_job:
+    name: job1
+    runs-on: ubuntu_latest
+    steps:
+     - name: "step1 job"
+     - id: step id
+       run: echo "First step job"
