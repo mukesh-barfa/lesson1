@@ -9,5 +9,4 @@ jobs:
     runs-on: ubuntu_latest
     steps:
      - name: "step1 job"
-     - id: step id
        run: echo "First step job"
