@@ -6,7 +6,7 @@ on:
 jobs:
   a_simple_job:
     name: job1
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
      - name: "step1 job"
        run: echo "First step job"
