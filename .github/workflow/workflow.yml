@@ -1,1 +1,9 @@
 name: Workflow overview
+on: workflow_dispatch
+job:
+  sample_job:
+  name: job1
+  runs-on: ubuntu-latest
+  steps:
+    name: "setp1 for job"
+    run: echo "First step run in job"
