@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+# name of workflow
+name: Workflow overview
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: ['main', 'dev']
+# Run this workflow when code is push on branch main or dev branch
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+   # This workflow contains a single job called "test"
+  test:
+    # This workflow contains a job name called "Build Artifacts"
+    name: Build Artifacts
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install composer dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+    # Runs a single command using the runners shell
+      - name: Build themes artifacts
+        run: echo "Nothing for now"
