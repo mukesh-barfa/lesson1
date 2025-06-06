@@ -28,3 +28,8 @@ jobs:
     # Runs a single command using the runners shell
       - name: Build themes artifacts
         run: echo "Nothing for now"
+
+      - name: Remove non required files/folder
+        run: |
+          rm -rf .github
+          rm .gitignore
