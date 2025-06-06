@@ -34,5 +34,5 @@ jobs:
           rm -rf .github
           rm .gitignore
 
-      -name: Current Date
+      - name: Current Date
         run: echo "$(date +'%Y-%m-%d')"
