@@ -33,6 +33,3 @@ jobs:
         run: |
           rm -rf .github
           rm .gitignore
-
-      -name: Current Date
-        run: Date "echo ${data+Y-m-d}"
