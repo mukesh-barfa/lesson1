@@ -39,3 +39,13 @@ jobs:
 
       - name: Current Date
         run: echo "$(date +'%Y-%m-%d')"
+
+      - name: Setup Git and Branch Commit
+        run: |
+          git fetch --unshallow origin
+          git config user.email ${{ secrets.CI_CD_GIT_EMAIL }}
+          git config user.name ${{ secrets.CI_CD_GIT_NAME }}
+          git config --global http.postBuffer 157286400
+          git add -A
+          git commit -am "Commits from Github CI/CD"
+          git remote add acquia ${{ secrets.REMOTE_GITHUB_URL }}
