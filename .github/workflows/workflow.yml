@@ -48,4 +48,3 @@ jobs:
           git config --global http.postBuffer 157286400
           git add -A
           git commit -am "Commits from Github CI/CD"
-          git remote add acquia ${{ secrets.REMOTE_GITHUB_URL }}
