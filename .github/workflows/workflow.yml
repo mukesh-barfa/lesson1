@@ -36,4 +36,4 @@ jobs:
 
       - name: Current Date
         #run: echo "$(date +'%Y-%m-%d')"
-        run: echp ${{github.actor}}
+        run: echo ${{github.actor}}
