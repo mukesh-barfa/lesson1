@@ -37,4 +37,4 @@ jobs:
       - name: Current Date
         #run: echo "$(date +'%Y-%m-%d')"
         #run: echo ${{github.actor}}
-        run: echo ${{ toJson(env) }}
+        run: echo ${{ toJson(runner) }}
