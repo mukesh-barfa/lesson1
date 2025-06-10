@@ -8,7 +8,8 @@ on:
   push:
     branches: ['main', 'dev']
 # Run this workflow when code is push on branch main or dev branch
-
+env:
+  WF_var: "work flow variable"
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
    # This workflow contains a single job called "test"
@@ -17,6 +18,8 @@ jobs:
     name: Build Artifacts
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      job_var: "job variable"
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
@@ -35,6 +38,4 @@ jobs:
           rm .gitignore
 
       - name: Current Date
-        #run: echo "$(date +'%Y-%m-%d')"
-        #run: echo ${{github.actor}}
-        run: echo ${{ toJson(runner) }}
+        run: echo "$(date +'%Y-%m-%d')"
