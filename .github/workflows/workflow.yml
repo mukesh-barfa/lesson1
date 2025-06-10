@@ -44,7 +44,4 @@ jobs:
         run: |
           git fetch --unshallow origin
           git config user.email ${{ secrets.CI_CD_GIT_EMAIL }}
-          git config user.name ${{ secrets.CI_CD_GIT_NAME }}
-          git config --global http.postBuffer 157286400
-          git add -A
-          git commit -am "Commits from Github CI/CD"
+        
