@@ -35,5 +35,5 @@ jobs:
           rm .gitignore
 
       - name: Current Date
-        run: echo "$(date +'%Y-%m-%d')"
+        #run: echo "$(date +'%Y-%m-%d')"
         run: echp ${{github.actor}}
