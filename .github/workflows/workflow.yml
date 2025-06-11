@@ -44,3 +44,4 @@ jobs:
         run: |
           git fetch --unshallow origin
           git config user.email ${{ secrets.CI_CD_GIT_EMAIL }}
+
