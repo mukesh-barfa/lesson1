@@ -1,4 +1,4 @@
 <?php
 // print hello string
 echo 'hello';
-echo 'jjjjj;
+// Remove code
