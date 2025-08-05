@@ -1,5 +1,5 @@
 <?php
 // print hello string
-echo 'hello';
+echo 'hi';
 // Remove code
 echo 'git ci cd jenkins'
