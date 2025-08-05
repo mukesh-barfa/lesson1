@@ -1,4 +1,4 @@
-[![Build Status](https://covering-cayman-deck-foods.trycloudflare.com/buildStatus/icon?job=lesson1&?cache-bust=1)](https://covering-cayman-deck-foods.trycloudflare.com/job/lesson1/)
+[![Build Status](https://latest-wb-necklace-throw.trycloudflare.com/job/lesson1/lastSuccessfulBuild/badge/icon)](https://latest-wb-necklace-throw.trycloudflare.com/job/lesson1/lastSuccessfulBuild/)
 
 # lesson1 commit
 
